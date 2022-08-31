@@ -1,0 +1,81 @@
+.todoLi {
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  font-size: .875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todoLi + .todoLi {
+  margin-top: .75rem;
+}
+
+.todoLi button {
+  background-color: transparent;
+  border: 0;
+  padding: .4rem .4rem 0;
+  border-radius: .25rem;
+  transition: background ease .3s;
+  cursor: pointer;
+}
+
+.todoLi button:hover, .todoLi button:focus {
+  background-color: var(--gray-400);
+}
+
+.todoLi svg {
+  color: var(--gray-300);
+  transition: color ease .3s;
+}
+
+.todoLi button:hover svg, .todoLi button:focus svg {
+  color: var(--danger);
+}
+
+.todoLi span {
+  margin: 0 auto 0 0;
+}
+
+.todoLi input[type="checkbox"] {
+  margin-right: .75rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  font: inherit;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid var(--blue);
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.todoLi input[type="checkbox"]:checked {
+  background-color: var(--purple-dark);
+  border: 2px solid var(--purple-dark);
+}
+
+.todoLi input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--gray-100);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.todoLi input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.todoLi input[type=checkbox]:checked + span {
+  text-decoration:line-through;
+  color: var(--gray-300);
+}

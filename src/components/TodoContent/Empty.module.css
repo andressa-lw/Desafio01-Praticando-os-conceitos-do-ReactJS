@@ -1,0 +1,18 @@
+.contentToDoEmpty {
+  border-top: 1px solid var(--gray-400);
+  margin-top: 1.5rem;
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentToDoEmpty p {
+  color: var(--gray-300);
+  margin-top: 1rem;
+}
+
+.contentToDoEmpty p strong {
+  display: block;
+}

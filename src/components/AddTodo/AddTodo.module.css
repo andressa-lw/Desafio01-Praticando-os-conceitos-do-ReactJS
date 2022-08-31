@@ -1,0 +1,95 @@
+.containerForm {
+  width: 100%;
+  max-width: 736px;
+  margin: -1.625rem auto 0 auto;
+  padding: 0 1.5rem;
+}
+
+.addTodoForm {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.addTodoForm input[type="text"] {
+  background-color: var(--gray-500);
+  border: 0;
+  padding: 1rem;
+  width: 100%;
+  color: var(--gray-100);
+}
+
+.addTodoForm input[type="text"]::placeholder {
+  color: var(--gray-300);
+}
+
+.addTodoForm button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-100);
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  column-gap: .5rem;
+  cursor: pointer;
+  transition: background ease .2s;
+}
+
+.addTodoForm button:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.addTodoForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.containerList {
+  width: 100%;
+  max-width: 736px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.headerTodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTodo .countAllTodo, .headerTodo .countDoneTodo {
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.0625rem;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.headerTodo .countAllTodo {
+  color: var(--blue);
+}
+
+.headerTodo .countDoneTodo {
+  color: var(--purple);
+}
+
+.headerTodo .countAllTodo span, .headerTodo .countDoneTodo span {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: .1875rem .5rem;
+  border-radius: 50%;
+} 
+
+.contentToDo {
+  margin-top: 1.5rem;
+}
+
+.contentToDo ul {
+  list-style: none;
+}
