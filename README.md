@@ -4,12 +4,14 @@
 
 <h3 align="center">
     Nesse desafio, você vai desenvolver uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
-
-    - [x] Adicionar uma nova tarefa
-    - [x] Marcar e desmarcar uma tarefa como concluída
-    - [x] Remover uma tarefa da listagem
-    - [x] Mostrar o progresso de conclusão das tarefas
 </h3>
+
+<p>
+- [x] Adicionar uma nova tarefa
+- [x] Marcar e desmarcar uma tarefa como concluída
+- [x] Remover uma tarefa da listagem
+- [x] Mostrar o progresso de conclusão das tarefas
+</p>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/andressa-lw/Desafio01-Praticando-os-conceitos-do-ReactJS?style=flat-square&&color=%2304D361" />
